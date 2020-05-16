@@ -59,7 +59,7 @@ def main(argv):
         # Report the highest-scoring classes and their scores.
         top5_i = np.argsort(prediction)[::-1][:5]
         print(file_name, ':\n' +
-              '\n'.join('  {:12s}: {:.3f}'.format(yamnet_classes[i], prediction[i])
+              '\n'.join('  {:12s}: {:.5f}'.format(yamnet_classes[i], prediction[i])
                         for i in top5_i))
 
         output(waveform, spectrogram, file_name + '.png')

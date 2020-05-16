@@ -1,4 +1,4 @@
-"""Inference demo for YAMNet."""
+"""Generate a tflite model from the original YAMNet with h5 model weights."""
 from __future__ import division, print_function
 
 import sys
