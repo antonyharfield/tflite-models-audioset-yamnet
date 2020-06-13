@@ -1,5 +1,9 @@
 # YAMNet
 
+> **NOTE**: This tflite-compatible version of YAMNet is a fork of a subtree of tensorflow/models. Go to the original [YAMNet model](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet).
+
+> For explanation and instructions, see the [related blog article]().
+
 YAMNet is a pretrained deep net that predicts 521 audio event classes based on
 the [AudioSet-YouTube corpus](http://g.co/audioset), and employing the
 [Mobilenet_v1](https://arxiv.org/pdf/1704.04861.pdf) depthwise-separable
@@ -79,6 +83,12 @@ The YAMNet code layout is as follows:
 * `inference.py`: Example code to classify input wav files.
 * `yamnet_test.py`: Simple test of YAMNet installation
 
+Extensions in this fork:
+
+* `convert.py`: Converts the YAMNet model to TFLite format.
+* `features_tflite.py`: A waveform-to-spectrogram function compatible with TFLite.
+* `inference_tflite.py`: Example code to classify input files using the converted TFLite model.
+
 ### Input: Audio Features
 
 See `features.py`.
@@ -135,4 +145,6 @@ According to our calculations, the classifier has 3.7M weights and performs
 
 ### Contact information
 
-This model repository is maintained by [Manoj Plakal](https://github.com/plakal) and [Dan Ellis](https://github.com/dpwe).
+The original [YAMNet model](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet) is maintained by [Manoj Plakal](https://github.com/plakal) and [Dan Ellis](https://github.com/dpwe).
+
+This fork was developed by [Antony Harfield](https://github.com/antonyharfield). See the [related blog article]().
