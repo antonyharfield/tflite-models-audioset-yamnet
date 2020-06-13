@@ -1,8 +1,8 @@
 # YAMNet
 
 > **NOTE**: This tflite-compatible version of YAMNet is a fork of a subtree of tensorflow/models. Go to the original [YAMNet model](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet).
-
-> For explanation and instructions, see the [related blog article]().
+> 
+> For explanation and instructions, see the [related article](https://medium.com/@antonyharfield/converting-the-yamnet-audio-detection-model-for-tensorflow-lite-inference-43d049bd357c).
 
 YAMNet is a pretrained deep net that predicts 521 audio event classes based on
 the [AudioSet-YouTube corpus](http://g.co/audioset), and employing the
@@ -147,4 +147,4 @@ According to our calculations, the classifier has 3.7M weights and performs
 
 The original [YAMNet model](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet) is maintained by [Manoj Plakal](https://github.com/plakal) and [Dan Ellis](https://github.com/dpwe).
 
-This fork was developed by [Antony Harfield](https://github.com/antonyharfield). See the [related blog article]().
+This fork was developed by [Antony Harfield](https://github.com/antonyharfield). See the [related blog article](https://medium.com/@antonyharfield/converting-the-yamnet-audio-detection-model-for-tensorflow-lite-inference-43d049bd357c).
